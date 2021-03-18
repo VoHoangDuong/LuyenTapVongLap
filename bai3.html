@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            function fibonaci() {
+                var f0 = prompt("Nhập vào f0");
+                var f1 = prompt("Nhập vào f1");
+                var so = new Array();
+                var fibo = "";
+                for (let i = 2; i < 20; i++) {
+                    so[0] = Number(f0);
+                    so[1] = Number(f1);
+                    so[i] = so[i - 1] + so[i - 2];
+                    fibo = fibo.concat(so[i] + ",");
+                }
+                alert("Dãy số là " + fibo);
+            }
+            fibonaci();
+        </script>
+    </body>
+</html>
